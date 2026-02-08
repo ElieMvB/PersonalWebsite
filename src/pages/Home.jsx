@@ -14,7 +14,7 @@ function Home () {
       </h1>
       <p className="ml-14 text-lg">
         Cette page est pour moi un bac a sable dans lequel j'apprends différentes choses liées au
-        développement web. Il me permet aussi de partager certains de mes projets, en infromatique
+        développement web. Il me permet aussi de partager certains de mes projets, en informatique
         ou autre.
       </p>
     </div>
