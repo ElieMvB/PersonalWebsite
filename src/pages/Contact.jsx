@@ -31,23 +31,28 @@ export default function Contact () {
     return (
         <div className="h-screen bg-blue-100">
             <TopMenu/>
-            <h1 className="py-20 flex justify-center sm:text-7xl text-5xl">Me Contacter :</h1>
-            <div className="sm:ml-80 sm:mr-80 sm:grid sm:grid-cols-3 sm:gap-40 bg-blue-100">
-                <button className="aspect-square shadow-2xl bg-white border-transparent 
-                                    rounded-2xl hover:brightness-75" 
-                        onClick={() => handleClick("ig")}>
-                    <img src={instagram}/>
-                </button>
-                <button className="aspect-square shadow-2xl bg-white border-transparent 
-                                    rounded-2xl hover:brightness-75" 
-                        onClick={() => handleClick("mail")}>
-                    <img src={mail}/>
-                </button>
-                <button className="aspect-square shadow-2xl bg-white border-transparent 
-                                    rounded-2xl hover:brightness-75" 
-                        onClick={() => handleClick("in")}>
-                    <img src={linkedin}/>
-                </button>
+            <h1 className="py-15 flex justify-center sm:text-7xl text-5xl">Me Contacter :</h1>
+            <p className="sm:hidden text-center">(Contact affiché en bas de page)</p>
+            <div className="bg-blue-100 w-full">
+                <div className="2xl:ml-55 2xl:mr-55 xl:ml-25 xl:mr-25 grid sm:grid-cols-3 lg:gap-40 
+                                lg:ml-20 lg:mr-20 md:ml-10 md:mr-10 md:gap-20 ml-25 
+                                mr-25 gap-5 grid-cols-1">
+                    <button className="aspect-square shadow-2xl bg-white border-transparent 
+                                        rounded-2xl hover:brightness-75" 
+                            onClick={() => handleClick("ig")}>
+                        <img src={instagram} className="w-[80%]"/>
+                    </button>
+                    <button className="aspect-square shadow-2xl bg-white border-transparent 
+                                        rounded-2xl hover:brightness-75" 
+                            onClick={() => handleClick("mail")}>
+                        <img src={mail} className="w-[80%]"/>
+                    </button>
+                    <button className="aspect-square shadow-2xl bg-white border-transparent 
+                                        rounded-2xl hover:brightness-75" 
+                            onClick={() => handleClick("in")}>
+                        <img src={linkedin} className="w-[80%]"/>
+                    </button>
+                </div>
             </div>
             <div className={`${showContact ? "flex" : "hidden"} sm:mt-10 justify-center sm:text-4xl 
                             bg-blue-100 text-2xl`}>
