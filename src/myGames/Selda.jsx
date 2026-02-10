@@ -22,7 +22,10 @@ export function Selda () {
             </h2>
             <h1 className="ml-6 mt-12">Petite vidéo de gamplay :</h1>
             <div className="flex justify-center">
-                <video src={video} width="500" height="500" controls="controls" />
+                <video src={video} width="500" height="500" controls="controls" 
+                    className="sm:block hidden"/>
+                <video src={video} width="500" height="500" controls="controls" 
+                    className="sm:hidden w-[75%]"/>
             </div>
             <h1 className="ml-6 mb-0">
                 Lien GitHub du projet :

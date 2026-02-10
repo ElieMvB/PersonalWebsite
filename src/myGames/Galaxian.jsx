@@ -6,12 +6,14 @@ import gameplay from "../assets/images/myGames/galaxian/galaxian.png"
 export function Galaxian () {
 
     return (
-        <div className="bg-black text-white">
+        <div className="bg-black text-white min-h-screen">
             <TopMenu/>
             <div>
-                <img className="rotate-90 sm:absolute top-0 ml-70" src={shipGif}/>
-                <h1 className="text-center mt-20 text-amber-300 text-7xl">Galaxian</h1>
-                <img className="rotate-90 sm:absolute top-0 right-0 mr-80" src={ennemyGif}/>
+                <img className="rotate-90 lg:absolute top-0 2xl:ml-70 lg:ml-40 hidden xl:block" 
+                    src={shipGif}/>
+                <img className="rotate-90 lg:absolute lg:top-0 xl:right-0 2xl:mr-80 xl:mr-50 hidden xl:block"
+                    src={ennemyGif}/>
+                <h1 className="text-center md:mt-20 text-amber-300 text-7xl">Galaxian</h1>
             </div>
             <h1 className="ml-6">Le jeux :</h1>
             <h2 className="ml-8">
@@ -28,7 +30,7 @@ export function Galaxian () {
                 Il faut après recharger en appuyant sur A.
             </h2>
             <h1 className="ml-6 mt-12">Petite vidéo de gamplay :</h1>
-            <div className="h-screen flex items-center justify-center">
+            <div className=" flex items-center justify-center">
                 <img src={gameplay}/>
             </div>
             <h1 className="ml-6 mb-0">
