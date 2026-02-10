@@ -28,7 +28,7 @@ export function TopMenu() {
     return (
         <>
         <nav className="fixed top-0 w-full flex justify-center bg-gradient-to-r
-            from-blue-800 to-blue-400 sm:py-8 py-3 z-50">
+            from-blue-800 to-blue-400 sm:py-6 py-3 z-50">
             <ul className={`${seeMenu ? "flex" : "hidden"} w-full flex-col items-center 
                 justify-center transparent absolute top-full pb-5 sm:flex sm:relative sm:flex-row 
                 sm:pb-0 bg-gradient-to-r from-blue-800 to-blue-400`}>

@@ -11,7 +11,7 @@ import bannerGames from "../assets/images/banners/gamesBanner.png";
 export function MyGamesHub () {
 
     return (
-    <div className="font-semibold bg-gradient-to-r from-blue-200 to-blue-100 min-h-screen">
+    <div className="font-semibold bg-gradient-to-r from-blue-200 to-blue-100 min-h-screen ">
         <TopMenu/>
         <Banner banner={bannerGames}/>
         <Description/>
@@ -33,7 +33,7 @@ function Description () {
             des jeux en python que j'ai codé quand j'étais au lycée.
         </p>
         <p>
-            Il y a des explications plus approfondies sur chaque jeux en cliquand dessus.
+            Il y a des explications plus approfondies sur chaque jeux en cliquant dessus.
         </p>
     </div>
     )
@@ -41,22 +41,22 @@ function Description () {
 
 function PythonGames () {
     return (
-        <nav className="ml-15 sm:grid sm:grid-cols-3 sm:flex sm:ml-40">
-            <NavLink to="/mes-jeux/Galaxian" className="bg-transparent border-transparent no-underline w-[400px]">
-                <div className="text-amber-700 hover:text-amber-600 hover:brightness-50 w-[400px]">
-                    <img className="w-[400px] rounded-md" src={galaxian}/>
+        <nav className="sm:ml-15 sm:grid sm:grid-cols-3 sm:ml-1/2 flex flex-col items-center justify-center min-h-screen">
+            <NavLink to="/mes-jeux/Galaxian" className="bg-transparent border-transparent no-underline w-[75%] sm:w-[95%]">
+                <div className="text-amber-700 hover:text-amber-600 hover:brightness-50 w-[75%] sm:w-[95%]">
+                    <img className="w-[75%] sm:w-[95%] rounded-md" src={galaxian}/>
                     <h2 className="font-mono">Galaxian</h2>
                 </div>
             </NavLink>
-            <NavLink to="/mes-jeux/Jumper" className="bg-transparent border-transparent no-underline w-[400px]">
-                <div className="text-amber-700 hover:text-amber-600 hover:brightness-50 w-[400px]">
-                    <img className="w-[400px] rounded-md" src={jumper}/>
+            <NavLink to="/mes-jeux/Jumper" className="bg-transparent border-transparent no-underline w-[75%] sm:w-[95%]">
+                <div className="text-amber-700 hover:text-amber-600 hover:brightness-50 w-[75%] sm:w-[95%]">
+                    <img className="w-[75%] sm:w-[95%] rounded-md" src={jumper}/>
                     <h2 className="font-mono">Jumper</h2>
                 </div>
             </NavLink>
-            <NavLink to="/mes-jeux/Selda" className="bg-transparent border-transparent no-underline w-[400px]">
-                <div className="text-amber-700 hover:text-amber-600 hover:brightness-50 w-[400px]">
-                    <img className="w-[400px] rounded-md" src={selda}/>
+            <NavLink to="/mes-jeux/Selda" className="bg-transparent border-transparent no-underline w-[75%] sm:w-[95%]">
+                <div className="text-amber-700 hover:text-amber-600 hover:brightness-50 w-[75%] sm:w-[95%]">
+                    <img className="w-[75%] sm:w-[95%] rounded-md" src={selda}/>
                     <h2 className="font-mono">Selda</h2>
                 </div>
             </NavLink>
