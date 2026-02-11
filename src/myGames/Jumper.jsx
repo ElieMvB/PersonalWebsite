@@ -39,7 +39,17 @@ export function Jumper () {
                 <div className="flex">
                     <img src={ndc} className="xl:ml-100 lg:ml-75 sm:ml-30"/>
                 </div>
-                <h1 className="ml-6 mb-0">
+                <h1 className="ml-6 py-8">
+                    Télécharcger le jeux au format .pyxapp :
+                    <button className="ml-8 text-2xl hover:bg-emerald-600
+                                bg-emerald-500 rounded-lg border-emerald-700">
+                        <a href="Jumper.pyxapp" download="Jumper.pyxapp" 
+                            className="text-white hover:text-neutral-200 no-underline ">
+                            Télécharger le jeux !
+                        </a>
+                    </button>
+                </h1>
+                <h1 className="ml-6 mb-4">
                     Lien GitHub du projet :
                     <a href="https://github.com/ElieMvB/Jumper" target="_blank"
                     className="ml-8 text-amber-400 hover:text-amber-600 text-2xl">

@@ -27,10 +27,20 @@ export function Selda () {
                 <video src={video} width="500" height="500" controls="controls" 
                     className="sm:hidden w-[75%]"/>
             </div>
+            <h1 className="ml-6 py-8">
+                Télécharcger le jeux au format .pyxapp :
+                <button className="ml-8 text-2xl hover:bg-emerald-600
+                            bg-emerald-500 rounded-lg border-emerald-700">
+                    <a href="Selda.pyxapp" download="Selda.pyxapp" 
+                        className="text-white hover:text-neutral-200 no-underline ">
+                        Télécharger le jeux !
+                    </a>
+                </button>
+            </h1>
             <h1 className="ml-6 mb-0">
                 Lien GitHub du projet :
                 <a href="https://github.com/ElieMvB/Galaxian" target="_blank"
-                className="ml-8 text-amber-400 hover:text-amber-600 text-2xl">
+                className="ml-8 text-amber-600 hover:text-amber-800 text-2xl">
                     https://github.com/ElieMvB/Galaxian
                 </a>
             </h1>
