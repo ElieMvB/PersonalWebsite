@@ -1,6 +1,7 @@
 import { TopMenu } from "../components/TopMenu";
 import player from "../assets/images/myGames/jumper/player.gif"
 import video from "../assets/videos/myGames/jumper.mp4"
+import ndc from "../assets/images/myGames/jumper/ndc2023.jpg"
 
 export function Jumper () {
 
@@ -9,7 +10,7 @@ export function Jumper () {
                 <TopMenu/>
                 <div className="flex flex-row justify-center">
                     <img className="w-[150px] h-[150px] mr-10" src={player}/>
-                    <h1 className="text-center mt-20 text-amber-300 text-7xl">Jumper</h1>
+                    <h1 className="text-center mt-20 text-amber-300 sm:text-7xl text-5xl">Jumper</h1>
                 </div>
                 <h1 className="ml-6">Le jeux :</h1>
                 <h2 className="ml-8">
@@ -32,9 +33,12 @@ export function Jumper () {
                     <video src={video} width="500" height="500" controls="controls" className="sm:block hidden"/>
                     <video src={video} width="500" height="500" controls="controls" className="sm:hidden w-[75%]"/>
                 </div>
-                <h1 className="ml-6 mb-0">
+                <h1 className="ml-6 py-8">
                     Photo de la victoire :
                 </h1>
+                <div className="flex">
+                    <img src={ndc} className="xl:ml-100 lg:ml-75 sm:ml-30"/>
+                </div>
                 <h1 className="ml-6 mb-0">
                     Lien GitHub du projet :
                     <a href="https://github.com/ElieMvB/Jumper" target="_blank"
