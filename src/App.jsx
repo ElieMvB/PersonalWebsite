@@ -6,6 +6,7 @@ import { Galaxian } from "./myGames/Galaxian"
 import { Jumper } from "./myGames/Jumper"
 import { Selda } from "./myGames/Selda"
 import ScrollToTop from "./components/ScrollToTop"
+import Objectifs from "./pages/Objectifs/Objectifs"
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
             element: <Selda/>
           }
         ]
+      },
+      {
+        path: "objectifs",
+        element: <Objectifs/>
       },
       {
         path: "contact",

@@ -10,7 +10,7 @@ export function Input ({placeholder, value, onChange}) {
         <input 
             type="text" 
             value={value}
-            className="border rounded px-3 py-2 w-full mt-4"
+            className="border border-2 rounded px-3 py-2 w-full mt-4"
             placeholder={placeholder}
             onChange={(e) => onChange(e.target.value)}
         />
