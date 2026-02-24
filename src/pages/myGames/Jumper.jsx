@@ -1,7 +1,7 @@
-import { TopMenu } from "../components/TopMenu";
-import player from "../assets/images/myGames/jumper/player.gif"
-import video from "../assets/videos/myGames/jumper.mp4"
-import ndc from "../assets/images/myGames/jumper/ndc2023.jpg"
+import { TopMenu } from "../../components/TopMenu";
+import player from "../../assets/images/myGames/jumper/player.gif"
+import video from "../../assets/videos/myGames/jumper.mp4"
+import ndc from "../../assets/images/myGames/jumper/ndc2023.jpg"
 
 export function Jumper () {
 

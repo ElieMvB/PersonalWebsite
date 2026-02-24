@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
-import { TopMenu } from "../components/TopMenu";
-import {Banner} from "../components/banners/SimpleBanner";
-import galaxian from "../assets/images/myGames/galaxian/galaxian.png";
-import jumper from "../assets/images/myGames/jumper/jumper.png";
-import selda from "../assets/images/myGames/selda/selda.png";
-import python from "../assets/images/Python-logo.png";
-import bannerGames from "../assets/images/banners/gamesBanner.png";
+import { TopMenu } from "../../components/TopMenu";
+import {Banner} from "../../components/banners/SimpleBanner";
+import galaxian from "../../assets/images/myGames/galaxian/galaxian.png";
+import jumper from "../../assets/images/myGames/jumper/jumper.png";
+import selda from "../../assets/images/myGames/selda/selda.png";
+import python from "../../assets/images/Python-logo.png";
+import bannerGames from "../../assets/images/banners/gamesBanner.png";
 
 
 export function MyGamesHub () {

@@ -1,5 +1,5 @@
-import { TopMenu } from "../components/TopMenu";
-import video from "../assets/videos/myGames/selda.mp4"
+import { TopMenu } from "../../components/TopMenu";
+import video from "../../assets/videos/myGames/selda.mp4"
 
 export function Selda () {
 

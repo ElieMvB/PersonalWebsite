@@ -1,5 +1,5 @@
-import { TopMenu } from "../../components/TopMenu";
-import {SkillTree} from "../../components/SkillTree";
+import { TopMenu } from "../components/TopMenu";
+import {SkillTree} from "../components/SkillTree";
 
 export default function Objectifs () {
     return (

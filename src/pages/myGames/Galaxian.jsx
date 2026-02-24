@@ -1,7 +1,7 @@
-import { TopMenu } from "../components/TopMenu";
-import shipGif from "../assets/images/myGames/galaxian/ship.gif"
-import ennemyGif from "../assets/images/myGames/galaxian/ennemy.gif"
-import gameplay from "../assets/images/myGames/galaxian/galaxian.png"
+import { TopMenu } from "../../components/TopMenu";
+import shipGif from "../../assets/images/myGames/galaxian/ship.gif"
+import ennemyGif from "../../assets/images/myGames/galaxian/ennemy.gif"
+import gameplay from "../../assets/images/myGames/galaxian/galaxian.png"
 
 export function Galaxian () {
 

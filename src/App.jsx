@@ -1,12 +1,12 @@
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom"
 import Home from "./pages/Home"
 import Contact from "./pages/Contact"
-import { MyGamesHub } from "./myGames/MyGamesHub"
-import { Galaxian } from "./myGames/Galaxian"
-import { Jumper } from "./myGames/Jumper"
-import { Selda } from "./myGames/Selda"
+import { MyGamesHub } from "./pages/myGames/MyGamesHub"
+import { Galaxian } from "./pages/myGames/Galaxian"
+import { Jumper } from "./pages/myGames/Jumper"
+import { Selda } from "./pages/myGames/Selda"
 import ScrollToTop from "./components/ScrollToTop"
-import Objectifs from "./pages/Objectifs/Objectifs"
+import Objectifs from "./pages/Objectifs"
 
 const router = createBrowserRouter([
   {
