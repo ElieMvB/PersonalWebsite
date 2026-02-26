@@ -7,6 +7,7 @@ import { Jumper } from "./pages/myGames/Jumper"
 import { Selda } from "./pages/myGames/Selda"
 import ScrollToTop from "./components/ScrollToTop"
 import Objectifs from "./pages/Objectifs"
+import ObjectifAtteint from "./pages/callisthenie/objectifAtteint"
 
 const router = createBrowserRouter([
   {
@@ -45,7 +46,17 @@ const router = createBrowserRouter([
       },
       {
         path: "objectifs",
-        element: <Objectifs/>
+        element: <Outlet/>,
+        children: [
+          {
+            path: "",
+            element: <Objectifs/>
+          },
+          {
+            path: ":parameter",
+            element: <ObjectifAtteint/>
+          }
+        ]
       },
       {
         path: "contact",
