@@ -67,7 +67,7 @@ import {SkillTree} from "../components/SkillTree";
       angle: 150,
       smallAngle: 150,
       levels: [
-        { id: 1, unlocked: true, name: "callisthénie", link: "/callisthenie" },
+        { id: 1, unlocked: true, name: "callisthénie", link: "" },
       ]
     }
   ];
