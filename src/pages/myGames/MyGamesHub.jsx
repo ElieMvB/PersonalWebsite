@@ -14,8 +14,8 @@ export function MyGamesHub () {
     <div className="font-semibold bg-gradient-to-r from-blue-200 to-blue-100 min-h-screen ">
         <TopMenu/>
         <Banner banner={bannerGames}/>
-        <Description/>
         <h1 className="text-center mt-15">Mes jeux :</h1>
+        <Description/>
         <div className=" py-1 flex flex-row">
             <img className="w-[40px] h-[40px] mt-6 m-2" src={python} />
             <h1 className="">En python :</h1>
