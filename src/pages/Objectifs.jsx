@@ -78,11 +78,11 @@ export default function Objectifs () {
             <TopMenu/>
             <div className="w-full h-full bg-slate-900 text-center">
                 <h1 className="text-white sm:mt-20 md:text-6xl sm:text-5xl
-                                text-4xl mt-10 mb-10">
+                                sm:text-4xl text-2xl mt-10 mb-10">
                   Mes objectifs en callisthénie :
                 </h1>
                 <SkillTree branches={OBJECTIVES}/>
-                <div style={{height: '20vh'}} className="sm:hidden"></div>
+                <div style={{height: '30vh'}} className="sm:hidden"></div>
             </div>
         </div>
     );
