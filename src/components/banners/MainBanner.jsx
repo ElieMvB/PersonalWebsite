@@ -8,7 +8,7 @@ export function MainBanner () {
             <div className="absolute insert-0 flex items-center justify-center 2xl:mb-135
                 sm:mb-40 md:mb-45 lg:mb-75 xl:mb-105 sm:text-black text-white">
                 <p className="md:text-[50px] font-serif text-center text-[30px]" >
-                    Le site d'Elie
+                    <strong>Bienvenue !</strong>
                 </p>
             </div>
         </div>
