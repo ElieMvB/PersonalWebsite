@@ -13,10 +13,10 @@ COPY --chown=node:node package*.json ./
 # Install dependencies
 RUN npm ci
 
-# Copy rest of the source code
+# Copy application source
 COPY . .
 
-# Ensure the "node" user owns the application files
+# Give node all rights on the app
 RUN chown -R node:node /app
 
 # Switch to non-root user
