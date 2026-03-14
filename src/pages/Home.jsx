@@ -2,13 +2,15 @@ import { MainBanner } from "../components/banners/MainBanner"
 import {TopMenu} from "../components/TopMenu"
 import { GoTopButton } from "../components/GoTopButton"
 import { useState } from "react"
-import le36 from "../assets/images/36.jpg"
-import front from "../assets/images/front.jpg"
-import maltese from "../assets/images/maltese.jpg"
+import bubbles from "../assets/images/me/bubbles.jpg"
+import jeux from "../assets/images/me/jeux.jpg"
+import mountain from "../assets/images/me/mountain.jpg"
+import river from "../assets/images/me/river.jpg"
+import planch from "../assets/images/me/semi-planch.jpg"
 
 function SlideMenu () {
   const [ind, setInd] = useState(0);
-  const img = [le36, front, maltese];
+  const img = [bubbles, jeux, mountain, river, planch];
 
   function rightButtonClick () {
     console.log("right");
@@ -29,7 +31,7 @@ function SlideMenu () {
   }
 
   return (
-    <div className="bg-slate-400 shadow-lg">
+    <div className="bg-gray-400/65 shadow-lg">
       <div className="grid grid-cols-4 flex md:h-70 sm:h-50 xl:h-100 lg:h-80">
         <div className="col-span-1 col-start-1 flex center justify-center items-center ">
           <button 
@@ -39,8 +41,8 @@ function SlideMenu () {
               &lt;
             </button>
         </div>
-        <div className="col-span-2 col-start-2 flex center justify-center items-center">
-          <img className="w-[70%] xl:w-[50%] object-contain h-[80%]" src={img[ind]} />
+        <div className="col-span-2 col-start-2 flex center justify-center items-center md:h-70 sm:h-50 xl:h-100 lg:h-80">
+          <img className="w-[70%] object-contain h-[80%]" src={img[ind]} />
         </div>
         <div className="col-span-1 col-start-4 flex center justify-center items-center">
           <button 
@@ -74,7 +76,8 @@ function Home () {
         Bonne découverte ! :)
       </h2>
     </div>
-    <div style={{height: '10vh'}}></div>
+    <div style={{height: '5vh'}} className="hidden lg:block"></div>
+    <div style={{height: '5vh'}}></div>
     <SlideMenu/>
     <div style={{height: '20vh'}}></div>
   </div>
