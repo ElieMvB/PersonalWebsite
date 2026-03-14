@@ -33,7 +33,7 @@ import {SkillTree} from "../components/SkillTree";
       levels: [
         { id: 1, unlocked: true, name: "" },
         { id: 2, unlocked: true, name: "bring sally up", link: "bring-sally-up" },
-        { id: 3, unlocked: false, name: "2 x bring sally up", link: "2-x-bring-sally-up" }
+        { id: 3, unlocked: false, name: "bring sally up pompes archer", link: "bring-sally-up-arch-pushups" }
       ]
     },
     {
