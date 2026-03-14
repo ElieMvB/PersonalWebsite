@@ -4,3 +4,4 @@ node_modules
 dockefile
 dockefile-dev
 .dockerignore
+src/assets
