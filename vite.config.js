@@ -11,4 +11,7 @@ export default defineConfig({
   plugins: [react(),
     tailwindcss()
   ],
-})
+  server: {
+		allowedHosts: ['elie.martial-van-beek.com'] //added this
+	}
+});
