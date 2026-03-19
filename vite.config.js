@@ -4,7 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 
 import dns from 'dns'
 
-dns.setDefaultResultOrder('elie.martial-van-beek.com')
+dns.setDefaultResultOrder('ipv4first')
 
 // https://vite.dev/config/
 export default defineConfig({
