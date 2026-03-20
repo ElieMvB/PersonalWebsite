@@ -36,22 +36,22 @@ function SlideMenu () {
     <div>
       <div style={{height: '3vh'}} className="bg-gradient-to-b from-blue-100 to-gray-400/65"></div>
       <div className="bg-gray-400/65">
-        <div className="grid grid-cols-4 flex md:h-70 sm:h-50 xl:h-100 lg:h-80">
+        <div className="grid grid-cols-4 flex md:h-70 sm:h-50 xl:h-100 lg:h-80 h-40">
           <div className="col-span-1 col-start-1 flex center justify-center items-center ">
             <button 
               onClick={leftButtonClick}
-              className="lg:w-24 lg:h-24 md:w-18 md:h-18 sm:w-12 sm:h-12 rounded-full bg-blue-600 text-white text-2xl flex items-center text-4xl  
+              className="lg:w-24 lg:h-24 md:w-18 md:h-18 sm:w-12 sm:h-12 w-10 h-10 rounded-full bg-blue-600 text-white text-2xl flex items-center text-4xl  
                         justify-center shadow-lg hover:bg-blue-700 hover:text-amber-500 hover:border-amber-500">
                 &lt;
               </button>
           </div>
-          <div className="col-span-2 col-start-2 flex center justify-center items-center md:h-70 sm:h-50 xl:h-100 lg:h-80">
+          <div className="col-span-2 col-start-2 flex center justify-center items-center md:h-70 sm:h-50 xl:h-100 lg:h-80 h-40">
             <img className="w-[70%] object-contain h-[80%]" src={img[ind]} />
           </div>
           <div className="col-span-1 col-start-4 flex center justify-center items-center">
             <button 
               onClick={rightButtonClick}
-              className="lg:w-24 lg:h-24 md:w-18 md:h-18 sm:w-12 sm:h-12 rounded-full bg-blue-600 text-white text-2xl flex items-center text-4xl 
+              className="lg:w-24 lg:h-24 md:w-18 md:h-18 sm:w-12 sm:h-12 w-10 h-10 rounded-full bg-blue-600 text-white text-2xl flex items-center text-4xl 
                         justify-center shadow-lg hover:bg-blue-700 hover:text-amber-500 hover:border-amber-500">
                 &gt;
             </button>
@@ -66,8 +66,8 @@ function SlideMenu () {
 function PirateHomePage () {
   return (
     <div>
-      <div style={{height: '20vh'}} className="bg-gradient-to-b from-blue-100 to-blue-400">
-      </div>
+      <div style={{height: '20vh'}} className="bg-gradient-to-b from-blue-100 to-blue-400 hidden md:block"></div>
+      <div style={{height: '10vh'}} className="bg-gradient-to-b from-blue-100 to-blue-400 md:hidden"></div>
       <div className="bg-blue-400 text-red-500 flex flex-col items-center text-2xl">
         <h1 className="2xl:py-20 py-6 xl:text-6xl sm:ml-0 ml-4">Stop motion lego pirates !</h1>
         <img
@@ -117,17 +117,17 @@ function Home () {
       </h2>
     </div>
     <div style={{height: '5vh'}} className="hidden lg:block"></div>
-    <div style={{height: '5vh'}}></div>
+    <div style={{height: '5vh'}} className="hidden sm:block"></div>
     <SlideMenu/>
-    <div style={{height: '10vh'}}></div>
+    <div style={{height: '10vh'}} className="hidden sm:block"></div>
     <h2 className="py-10 sm:ml-14 sm:text-2xl text-lg ml-4">
-      Commençons avec un <strong className="text-3xl">petit projet</strong> qui me tenais à coeur 
-      par <strong className="sm:text-3xl text-2xl">nostalgie</strong>. <br/>
+      Commençons avec un <strong className="sm:text-3xl text-xl">petit projet</strong> qui me tenais à coeur 
+      par <strong className="sm:text-3xl text-xl">nostalgie</strong>. <br/>
       Quand j'étais au collège j'avais du faire un <strong className="sm:text-3xl text-2xl">stop motion</strong>. 
       Or j'ai lamentablement échoué à rendre ce travail... Mais j'ai repris 
-      <strong className="sm:text-3xl text-2xl">ma revenche</strong> il y a quelques mois ! 
+      <strong className="sm:text-3xl text-xl"> ma revenche</strong> il y a quelques mois ! 
     </h2>
-    <div style={{height: '10vh'}}></div>
+    <div style={{height: '10vh'}} className="hidden sm:block"></div>
     <PirateHomePage/>
     <div style={{height: '20vh'}}></div>
   </div>
