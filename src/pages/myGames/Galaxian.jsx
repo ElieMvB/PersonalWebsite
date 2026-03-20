@@ -1,7 +1,7 @@
 import { TopMenu } from "../../components/TopMenu";
 import shipGif from "../../assets/images/myGames/galaxian/ship.gif"
 import ennemyGif from "../../assets/images/myGames/galaxian/ennemy.gif"
-import gameplay from "../../assets/images/myGames/galaxian/galaxian.png"
+import video from "../../assets/videos/myGames/galaxian.mp4"
 
 export function Galaxian () {
 
@@ -30,13 +30,15 @@ export function Galaxian () {
                 Il faut après recharger en appuyant sur A.
             </h2>
             <h1 className="ml-6 mt-12">Petite vidéo de gamplay :</h1>
-            <div className=" flex items-center justify-center">
-                <img src={gameplay}/>
+            <div className=" flex justify-center">
+                <video src={video} width="500" height="500" controls="controls" className="sm:block hidden"/>
+                <video src={video} width="500" height="500" controls="controls" className="sm:hidden w-[75%]"/>
             </div>
-            <h1 className="ml-6 mb-0">
+            <h1 className="sm:ml-6 ml-2 mb-4 sm:text-3xl text-lg mt-10">
                 Lien GitHub du projet :
+                <br/>
                 <a href="https://github.com/ElieMvB/Galaxian" target="_blank"
-                className="ml-8 text-amber-400 hover:text-amber-600 text-2xl">
+                className="sm:ml-8 text-amber-400 hover:text-amber-600 sm:text-2xl text-base">
                     https://github.com/ElieMvB/Galaxian
                 </a>
             </h1>

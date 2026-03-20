@@ -37,7 +37,12 @@ export function Selda () {
                     </a>
                 </button>
             </h1>
-            <h1 className="sm:ml-6 ml-2 mb-0 sm:text-3xl text-xl">
+                <h2 className="ml-8 sm:text-2xl text-lg mb-4">
+                    Pour pouvoir jouer avec le .pyxapp il faut l'exécuter avec la commande 
+                    suivante dans un environnement python et la librairie pyxel : <br/>
+                    pyxel play Jumper.pyxapp
+                </h2>
+            <h1 className="sm:ml-6 ml-2 mb-0 sm:text-3xl text-xl mt-10">
                 Lien GitHub du projet :
                 <br/>
                 <a href="https://github.com/ElieMvB/Galaxian" target="_blank"
