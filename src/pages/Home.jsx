@@ -88,7 +88,7 @@ function PirateHomePage () {
         <video
           src={stopmotion}
           controls="controls" 
-          className="xl:w-[70%] w-[50%]" 
+          className="w-[70%]" 
         />
       </div>
       <div style={{height: '20vh'}} className="bg-gradient-to-b from-blue-400 to-blue-100">
