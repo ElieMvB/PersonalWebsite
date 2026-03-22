@@ -1,7 +1,7 @@
 import { MainBanner } from "../components/banners/MainBanner"
 import {TopMenu} from "../components/TopMenu"
 import { GoTopButton } from "../components/GoTopButton"
-import { useState } from "react"
+import { useState, useCallback} from "react"
 import bubbles from "../assets/images/me/bubbles.jpg"
 import jeux from "../assets/images/me/jeux.jpg"
 import mountain from "../assets/images/me/mountain.jpg"
@@ -10,27 +10,18 @@ import planch from "../assets/images/me/semi-planch.jpg"
 import stopmotion from "../assets/videos/stop_motion_pirates.mp4"
 import pirate from "../assets/images/pirate-head.png"
 
+const img = [bubbles, jeux, mountain, river, planch];
+
 function SlideMenu () {
   const [ind, setInd] = useState(0);
-  const img = [bubbles, jeux, mountain, river, planch];
 
-  function rightButtonClick () {
-    console.log("right");
-    if (ind == img.length - 1) {
-      setInd(0);
-    } else {
-      setInd(ind + 1);
-    }
-  }
+  const rightButtonClick = useCallback(() => {
+    setInd((prev) => (prev + 1) % img.length);
+  }, []);
 
-  function leftButtonClick () {
-    console.log("left");
-    if (ind == 0) {
-      setInd(img.length - 1);
-    } else {
-      setInd(ind - 1);
-    }
-  }
+  const leftButtonClick = useCallback(() => {
+    setInd((prev) => (prev - 1 + img.length) % img.length);
+  }, []);
 
   return (
     <div>
@@ -46,7 +37,11 @@ function SlideMenu () {
               </button>
           </div>
           <div className="col-span-2 col-start-2 flex center justify-center items-center md:h-70 sm:h-50 xl:h-100 lg:h-80 h-40">
-            <img className="w-[70%] object-contain h-[80%]" src={img[ind]} />
+            <img 
+              className="w-[70%] object-contain h-[80%]" 
+              src={img[ind]} 
+              alt="slider"
+            />
           </div>
           <div className="col-span-1 col-start-4 flex center justify-center items-center">
             <button 
@@ -68,7 +63,7 @@ function PirateHomePage () {
     <div>
       <div style={{height: '20vh'}} className="bg-gradient-to-b from-blue-100 to-blue-400 hidden md:block"></div>
       <div style={{height: '10vh'}} className="bg-gradient-to-b from-blue-100 to-blue-400 md:hidden"></div>
-      <div className="bg-blue-400 text-red-500 flex flex-col items-center text-2xl">
+      <div className="bg-blue-400 text-red-700 text-shadow-lg flex flex-col items-center text-2xl">
         <h1 className="2xl:py-20 py-6 xl:text-6xl sm:ml-0 ml-4">Stop motion lego pirates !</h1>
         <img
           src={pirate}

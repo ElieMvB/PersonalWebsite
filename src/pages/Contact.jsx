@@ -24,7 +24,7 @@ export default function Contact () {
             navigator.clipboard.writeText("elie.vanbeek66@gmail.com");
         }
         else if (showContact === "in") {
-            navigator.clipboard.writeText("IN");
+            navigator.clipboard.writeText("elie-martial-van-beek");
         }
     }
 
@@ -38,14 +38,14 @@ export default function Contact () {
             <div className={` flex justify-center mb-5 
                             2xl:text-4xl lg:text-3xl bg-blue-100 sm:text-2xl text-md`}>
                 <div className={`${showContact ? "" : "w-2/3"} sm:w-2/3 xl:w-2/5 border-black border-4 rounded-md flex 
-                                justify-center bg-slate-400 py-2 sm:py-0`}>
+                                justify-center items-center bg-slate-400 py-2 sm:py-0`}>
                     {showContact === "ig" && <p>@elie_mvb</p>}
                     {showContact === "mail" && <p>elie.vanbeek66@gmail.com</p>}
-                    {showContact === "in" && <p>IN</p>}
+                    {showContact === "in" && <p>elie-martial-van-beek</p>}
                     {showContact === null && <p>---</p>}
                     {showContact != null && 
-                        <button onClick={handleCopy} className="ml-4 h-[50px] 2xl:mt-10 sm:mt-6 grid grid-cols-2
-                                                        bg-white rounded-lg">
+                        <button onClick={handleCopy} className="ml-4 h-[50px] grid grid-cols-2 
+                                                                bg-white rounded-lg">
                             {!copiedImage && <>
                                     <p className="w-[50px]">Copier</p>
                                     <img src={copy} className="w-[30px] mt-2 ml-2"/>
@@ -59,7 +59,7 @@ export default function Contact () {
                     }
                 </div>
             </div>
-            <div className="bg-blue-100 w-full mb-4">
+            <div className="bg-blue-100 w-full mb-4 2xl:mt-20 xl:mt-15 lg:mt-10 md:mt-5">
                 <div className="2xl:ml-55 2xl:mr-55 xl:ml-40 xl:mr-40 grid sm:grid-cols-3 lg:gap-40 
                                 lg:ml-20 lg:mr-20 md:ml-30 md:mr-30 md:gap-25 ml-25 
                                 mr-25 gap-5 grid-cols-1">
