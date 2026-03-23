@@ -6,6 +6,7 @@ const MENU = [
     {name: "Accueil", link: "/"},
     {name: "Mes jeux", link: "/mes-jeux"},
     {name: "Mes objectifs", link: "/objectifs"},
+    {name: "Rock", link: "/rock"},
     {name: "Contact", link: "/contact"}
 ]
 

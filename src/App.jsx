@@ -8,6 +8,7 @@ import { Selda } from "./pages/myGames/Selda"
 import ScrollToTop from "./components/ScrollToTop"
 import Objectifs from "./pages/Objectifs"
 import ObjectifAtteint from "./pages/callisthenie/ObjectifAtteint"
+import Rock from "./pages/Rock"
 
 const router = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
             element: <ObjectifAtteint/>
           }
         ]
+      },
+      {
+        path: "rock",
+        element: <Rock/>
       },
       {
         path: "contact",
