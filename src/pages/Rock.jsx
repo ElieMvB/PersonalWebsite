@@ -1,5 +1,5 @@
 import { TopMenu } from "../components/TopMenu";
-import ragda from "../assets/videos/stop_motion_pirates.mp4";
+import ragda from "../assets/videos/rock/ragda.mp4";
 
 export default function Rock () {
     return (
@@ -13,12 +13,12 @@ export default function Rock () {
                         <h2>like a bug on a cinema screen !</h2>
                     </div>
                     <div className="text-green-600 text-xl">
-                        <h1 className="md:ml-10 ml-5">
+                        <h1 className="md:ml-10 ml-5 py-6">
                             Ragda !
                         </h1>
                         <p className="md:ml-15 ml-7">
                             Spectacle étudiant après seulement 4 mois et demi de dance.
-                            <br/>Un vrai banger, on s'est bien amusés !
+                            <br/>Un vrai banger, on s'est bien amusés !<br/><br/>
                         </p>
                         <div className="flex justify-center">
                             <video
@@ -29,11 +29,11 @@ export default function Rock () {
                         </div>
                     </div>
                     <div className="text-red-700 text-xl">
-                        <h1 className="text-white md:ml-10 ml-5">Chorées des 24h de <strong className="text-red-700">l'INSA</strong> !</h1>
+                        <h1 className="text-white md:ml-10 ml-5 py-6">Chorées des 24h de <strong className="text-red-700">l'INSA</strong> !</h1>
                         <p className="text-slate-400 text-center">Comming soon</p>
                     </div>
                     <div className="text-amber-400 text-xl">
-                        <h1 className="md:ml-10 ml-5">If's got talent</h1>
+                        <h1 className="md:ml-10 ml-5 py-6">If's got talent</h1>
                         <p className="md:ml-15 ml-7">
                             Petite chorée réalisée avec 3 amis danceurs. <br/>
                             Contrairement aux deux autres chorées, on n'avait pas de 
@@ -41,6 +41,7 @@ export default function Rock () {
                         </p>
                         <p className="text-slate-400 text-center">Comming soon</p>
                     </div>
+                    <div className="h-20 hidden sm:block"/>
                 </div>
             </div>
             <div className="h-20 hidden sm:block"/>
