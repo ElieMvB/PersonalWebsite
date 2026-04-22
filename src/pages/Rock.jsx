@@ -3,7 +3,7 @@ import ragda from "../assets/videos/rock/ragda.mp4";
 
 export default function Rock () {
     return (
-        <div className="bg-slate-700 h-full">
+        <div className="sm:bg-slate-600 bg-slate-900 h-full">
             <TopMenu/>
             <div className="h-20 hidden sm:block"/>
             <div className="flex justify-center text-shadow-2xs text-shadow-slate-500">
@@ -13,7 +13,7 @@ export default function Rock () {
                         <h2>like a bug on a cinema screen !</h2>
                     </div>
                     <div className="text-green-600 text-xl">
-                        <h1 className="md:ml-10 ml-5 py-6">
+                        <h1 className="md:ml-10 ml-5 py-6 sm:text-7xl text-5xl">
                             Ragda !
                         </h1>
                         <p className="md:ml-15 ml-7">
@@ -28,17 +28,17 @@ export default function Rock () {
                             />
                         </div>
                     </div>
-                    <div className="text-red-700 text-xl">
-                        <h1 className="text-white md:ml-10 ml-5 py-6">Chorées des 24h de <strong className="text-red-700">l'INSA</strong> !</h1>
-                        <p className="text-slate-400 text-center">Comming soon</p>
-                    </div>
                     <div className="text-amber-400 text-xl">
-                        <h1 className="md:ml-10 ml-5 py-6">If's got talent</h1>
+                        <h1 className="md:ml-10 ml-5 py-6 sm:text-7xl text-5xl">If's got talent</h1>
                         <p className="md:ml-15 ml-7">
                             Petite chorée réalisée avec 3 amis danceurs. <br/>
                             Contrairement aux deux autres chorées, on n'avait pas de 
                             chorégraphe : on s'est donc improvisés chorégraphes tous ensembles !
                         </p>
+                        <p className="text-slate-400 text-center">Comming soon</p>
+                    </div>
+                    <div className="text-red-700 text-xl">
+                        <h1 className="text-white md:ml-10 ml-5 py-6 sm:text-7xl text-5xl">Chorées des 24h de <strong className="text-red-700">l'INSA</strong> !</h1>
                         <p className="text-slate-400 text-center">Comming soon</p>
                     </div>
                     <div className="h-20 hidden sm:block"/>

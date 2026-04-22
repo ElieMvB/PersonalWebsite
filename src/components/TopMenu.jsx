@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 const MENU = [
     {name: "Accueil", link: "/"},
     {name: "Mes jeux", link: "/mes-jeux"},
-    {name: "Mes objectifs", link: "/objectifs"},
+    {name: "Callisthénie", link: "/objectifs"},
     {name: "Rock", link: "/rock"},
     {name: "Contact", link: "/contact"}
 ]
