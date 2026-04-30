@@ -1,3 +1,11 @@
+# Mon premier vrai site web
+
+Petit site web que j'héberge.
+Il n'a pas la prétention d'être particulièrement impressionant, mais simplement de partager quelques projets personnels dont je suis content.
+
+
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
