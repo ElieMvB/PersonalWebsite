@@ -1,5 +1,6 @@
 import { TopMenu } from "../components/TopMenu";
 import ragda from "../assets/videos/rock/ragda.mp4";
+import ifgt from "../assets/videos/rock/ifgt_rock.mp4"
 
 export default function Rock () {
     return (
@@ -24,9 +25,10 @@ export default function Rock () {
                             <video
                                 src={ragda}
                                 controls="controls" 
-                                className="w-[70%]" 
+                                className="sm:w-[70%] w-[95%]" 
                             />
                         </div>
+                        <p className="text-slate-400 text-center">Official video comming soon</p>
                     </div>
                     <div className="text-amber-400 text-xl">
                         <h1 className="md:ml-10 ml-5 py-6 sm:text-7xl text-5xl">If's got talent</h1>
@@ -35,7 +37,14 @@ export default function Rock () {
                             Contrairement aux deux autres chorées, on n'avait pas de 
                             chorégraphe : on s'est donc improvisés chorégraphes tous ensembles !
                         </p>
-                        <p className="text-slate-400 text-center">Comming soon</p>
+                        <div className="flex justify-center">
+                            <video
+                                src={ifgt}
+                                controls="controls" 
+                                className="sm:w-[70%] w-[95%]" 
+                            />
+                        </div>
+                        <p className="text-slate-400 text-center">Official video comming soon</p>
                     </div>
                     <div className="text-red-700 text-xl">
                         <h1 className="text-white md:ml-10 ml-5 py-6 sm:text-7xl text-5xl">Chorées des 24h de <strong className="text-red-700">l'INSA</strong> !</h1>
