@@ -33,9 +33,8 @@ export default function Rock () {
                     <div className="text-amber-400 text-xl">
                         <h1 className="md:ml-10 ml-5 py-6 sm:text-7xl text-5xl">If's got talent</h1>
                         <p className="md:ml-15 ml-7">
-                            Petite chorée réalisée avec 3 amis danceurs. <br/>
-                            Contrairement aux deux autres chorées, on n'avait pas de 
-                            chorégraphe : on s'est donc improvisés chorégraphes tous ensembles !
+                            Petite chorée avec 3 amis. <br/>
+                            Contrairement à d'habitude pas de chorégraphe : on l'a fait nous mêmes !
                         </p>
                         <div className="flex justify-center">
                             <video
