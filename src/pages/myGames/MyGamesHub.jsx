@@ -16,7 +16,7 @@ export function MyGamesHub () {
         <div className="hidden sm:block">
             <Banner banner={bannerGames}/>
         </div>
-        <h1 className="text-center sm:mt-15">Mes jeux :</h1>
+        <h1 className="text-center sm:mt-15 md:text-6xl text-4xl">Mes jeux :</h1>
         <Description/>
         <div className=" py-1 flex flex-row">
             <img className="w-[40px] h-[40px] mt-6 m-2" src={python} />
@@ -29,7 +29,7 @@ export function MyGamesHub () {
 
 function Description () {
     return (
-    <div className="ml-6 mt-8 text-lg">
+    <div className="ml-6 mt-8 text-lg md:text-2xl">
         <p>
             Petit catalogue avec les différents jeux que j'ai pu coder. Pour l'instant surtout
             des jeux en python que j'ai codé quand j'étais au lycée.
