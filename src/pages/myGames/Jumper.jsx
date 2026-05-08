@@ -6,7 +6,7 @@ import ndc from "../../assets/images/myGames/jumper/ndc2023.jpg"
 export function Jumper () {
 
     return (
-            <div className="bg-indigo-950 text-white">
+            <div className="bg-gradient-to-br from-indigo-950 via-blue-800 to-blue-900 text-white">
                 <TopMenu/>
                 <div className="flex flex-row justify-center sm:mt-5">
                     <img className="sm:w-[150px] sm:h-[150px] mr-10 w-[90px] h-[90px] mt-10 sm:mt-0" src={player}/>

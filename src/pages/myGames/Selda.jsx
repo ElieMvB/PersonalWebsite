@@ -4,7 +4,7 @@ import video from "../../assets/videos/myGames/selda.mp4"
 export function Selda () {
 
     return (
-        <div className="bg-gradient-to-br from-slate-400 to-slate-50 text-black">
+        <div className="bg-gradient-to-br from-slate-300 via-teal-300 to-green-300 text-black">
             <TopMenu/>
             <div>
                 <h1 className="text-center mt-20 text-rose-600 text-7xl">Selda</h1>

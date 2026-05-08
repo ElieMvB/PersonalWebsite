@@ -11,7 +11,7 @@ import bannerGames from "../../assets/images/banners/gamesBanner.png";
 export function MyGamesHub () {
 
     return (
-    <div className="font-semibold bg-gradient-to-r from-blue-200 to-blue-100 min-h-screen ">
+    <div className="font-semibold bg-gradient-to-br from-slate-950 via-purple-950 to-slate-950 text-white min-h-screen ">
         <TopMenu/>
         <div className="hidden sm:block">
             <Banner banner={bannerGames}/>
@@ -46,20 +46,23 @@ function PythonGames () {
         <nav className="sm:ml-15 sm:grid sm:grid-cols-3 sm:ml-1/2 flex flex-col items-center justify-center">
             <NavLink to="/mes-jeux/Galaxian" className="bg-transparent border-transparent no-underline w-[75%] sm:w-[95%]">
                 <div className="text-amber-500 hover:text-amber-600 hover:brightness-50 w-[75%] sm:w-[95%]">
+                    <h2 className="font-mono sm:hidden mt-15">Galaxian :</h2>
                     <img className="w-[95%] rounded-md" src={galaxian}/>
-                    <h2 className="font-mono">Galaxian</h2>
+                    <h2 className="font-mono hidden sm:block">Galaxian</h2>
                 </div>
             </NavLink>
             <NavLink to="/mes-jeux/Jumper" className="bg-transparent border-transparent no-underline w-[75%] sm:w-[95%]">
                 <div className="text-amber-500 hover:text-amber-600 hover:brightness-50 w-[75%] sm:w-[95%]">
+                    <h2 className="font-mono sm:hidden mt-15">Jumper :</h2>
                     <img className="w-[95%] rounded-md" src={jumper}/>
-                    <h2 className="font-mono">Jumper</h2>
+                    <h2 className="font-mono hidden sm:block">Jumper</h2>
                 </div>
             </NavLink>
             <NavLink to="/mes-jeux/Selda" className="bg-transparent border-transparent no-underline w-[75%] sm:w-[95%]">
                 <div className="text-amber-500 hover:text-amber-600 hover:brightness-50 w-[75%] sm:w-[95%]">
+                    <h2 className="font-mono sm:hidden mt-15">Selda :</h2>
                     <img className="w-[95%] rounded-md" src={selda}/>
-                    <h2 className="font-mono">Selda</h2>
+                    <h2 className="font-mono hidden sm:block">Selda</h2>
                 </div>
             </NavLink>
         </nav>

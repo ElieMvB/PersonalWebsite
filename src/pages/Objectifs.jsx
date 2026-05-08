@@ -4,7 +4,7 @@ import {SkillTree} from "../components/SkillTree";
   const OBJECTIVES = [
     {
       name: "front",
-      color: "#ff4444",
+      color: "#1e14da",
       angle: -100,        // en degrés
       smallAngle: -130,
       levels: [
@@ -50,7 +50,7 @@ import {SkillTree} from "../components/SkillTree";
     },
         {
       name: "tractions lestées",
-      color: "#1e14da",
+      color: "#ff4444",
       angle: 200,
       smallAngle: 180,
       levels: [
@@ -74,15 +74,14 @@ import {SkillTree} from "../components/SkillTree";
 
 export default function Objectifs () {
     return (
-        <div className="bg-slate-900">
+        <div className="bg-gradient-to-br from-slate-900 to-teal-950 min-h-screen">
             <TopMenu/>
-            <div className="w-full h-full bg-slate-900 text-center">
+            <div className="w-full h-full text-center">
                 <h1 className="text-white sm:mt-20 md:text-6xl sm:text-5xl
-                                sm:text-4xl text-2xl mt-10 mb-10">
+                                sm:text-4xl text-2xl mt-10 sm:mb-10 mb-20">
                   Mes objectifs en callisthénie :
                 </h1>
                 <SkillTree branches={OBJECTIVES}/>
-                <div style={{height: '30vh'}} className="sm:hidden"></div>
             </div>
         </div>
     );

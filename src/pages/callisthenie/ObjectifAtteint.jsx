@@ -13,7 +13,7 @@ export default function ObjectifAtteint () {
     const videoPath = new URL(`../../assets/videos/objectifsAtteints/${parameter}.mp4`, import.meta.url).href;
 
     return (
-        <div className="bg-slate-900 w-full h-screen text-amber-500 text-center">
+        <div className="bg-gradient-to-br from-slate-950 via-slate-900 to-teal-950 w-full min-h-screen text-amber-500 text-center">
             <TopMenu/>
             <div style={{height: '10vh'}} className="hidden sm:block"/>
             <h1>Objectif réussi</h1>
@@ -26,7 +26,7 @@ export default function ObjectifAtteint () {
                 className="sm:absolute sm:w-[20%] w-[35%] sm:right-15 right-5 top-30 rotate-y-180"
                 src={confetti}
             />
-            <div className="bg-slate-900" >
+            <div className="" >
                 <video 
                     src={videoPath} 
                     controls="controls" 

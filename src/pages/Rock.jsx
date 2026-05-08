@@ -4,21 +4,21 @@ import ifgt from "../assets/videos/rock/ifgt_rock.mp4"
 
 export default function Rock () {
     return (
-        <div className="sm:bg-slate-600 bg-slate-900 h-full">
+        <div className="sm:bg-gradient-to-br sm:from-slate-700 sm:via-slate-500 sm:to-slate-700 bg-gradient-to-br from-slate-800 to-slate-950 h-full">
             <TopMenu/>
             <div className="h-20 hidden sm:block"/>
-            <div className="flex justify-center text-shadow-2xs text-shadow-slate-500">
-                <div className="bg-slate-900 sm:w-[70%] w-[100%]">
-                    <div className="text-red-600 text-center text-3xl">
-                        <h1>Let me dance</h1>
+            <div className="flex justify-center text-shadow-2xs">
+                <div className="sm:bg-gradient-to-br sm:from-slate-800 sm:to-slate-950 sm:w-[70%] w-[100%] rounded-xl">
+                    <div className="bg-gradient-to-r from-red-600 via-red-600 to-red-400 bg-clip-text text-transparent text-center text-3xl">
+                        <h1 className="">Let me dance</h1>
                         <h2>like a bug on a cinema screen !</h2>
                     </div>
                     <div className="text-green-600 text-xl">
                         <h1 className="md:ml-10 ml-5 py-6 sm:text-7xl text-5xl">
                             Ragda !
                         </h1>
-                        <p className="md:ml-15 ml-7">
-                            Spectacle étudiant après seulement 4 mois et demi de dance.
+                        <p className="md:ml-15 ml-7 md:mr-15 mr-7">
+                            Spectacle étudiant après seulement 4 mois et demi de danse.
                             <br/>Un vrai banger, on s'est bien amusés !<br/><br/>
                         </p>
                         <div className="flex justify-center">
@@ -32,7 +32,7 @@ export default function Rock () {
                     </div>
                     <div className="text-amber-400 text-xl">
                         <h1 className="md:ml-10 ml-5 py-6 sm:text-7xl text-5xl">If's got talent</h1>
-                        <p className="md:ml-15 ml-7">
+                        <p className="md:ml-15 ml-7 md:mr-15 mr-7">
                             Petite chorée avec 3 amis. <br/>
                             Contrairement à d'habitude pas de chorégraphe : on l'a fait nous mêmes !
                         </p>

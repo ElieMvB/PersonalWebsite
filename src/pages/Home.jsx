@@ -10,9 +10,8 @@ import planch from "../assets/images/me/semi-planch.jpg"
 import stopmotion from "../assets/videos/stop_motion_pirates.mp4"
 import pirate from "../assets/images/pirate-head.png"
 
-const img = [bubbles, jeux, mountain, river, planch];
-
 function SlideMenu () {
+  const img = [bubbles, jeux, mountain, river, planch];
   const [ind, setInd] = useState(0);
 
   const rightButtonClick = useCallback(() => {
@@ -25,14 +24,14 @@ function SlideMenu () {
 
   return (
     <div>
-      <div style={{height: '3vh'}} className="bg-gradient-to-b from-blue-100 to-gray-400/65"></div>
-      <div className="bg-gray-400/65">
+      <div style={{height: '3vh'}} className="bg-gradient-to-b to-gray-400/40"></div>
+      <div className="bg-gray-400/40">
         <div className="grid grid-cols-4 flex md:h-70 sm:h-50 xl:h-100 lg:h-80 h-40">
           <div className="col-span-1 col-start-1 flex center justify-center items-center ">
             <button 
               onClick={leftButtonClick}
               className="lg:w-24 lg:h-24 md:w-18 md:h-18 sm:w-12 sm:h-12 w-10 h-10 rounded-full bg-blue-600 text-white text-2xl flex items-center text-4xl  
-                        justify-center shadow-lg hover:bg-blue-700 hover:text-amber-500 hover:border-amber-500">
+                        justify-center shadow-lg hover:bg-blue-700 hover:text-amber-500 hover:border-amber-500 border-white/50">
                 &lt;
               </button>
           </div>
@@ -47,13 +46,13 @@ function SlideMenu () {
             <button 
               onClick={rightButtonClick}
               className="lg:w-24 lg:h-24 md:w-18 md:h-18 sm:w-12 sm:h-12 w-10 h-10 rounded-full bg-blue-600 text-white text-2xl flex items-center text-4xl 
-                        justify-center shadow-lg hover:bg-blue-700 hover:text-amber-500 hover:border-amber-500">
+                        justify-center shadow-lg hover:bg-blue-700 hover:text-amber-500 hover:border-amber-500 border-white/50">
                 &gt;
             </button>
           </div>
         </div>
       </div>
-      <div style={{height: '3vh'}} className="bg-gradient-to-b from-gray-400/65 to-blue-100"></div>
+      <div style={{height: '3vh'}} className="bg-gradient-to-b from-gray-400/40"></div>
     </div>
   )
 }
@@ -61,8 +60,7 @@ function SlideMenu () {
 function PirateHomePage () {
   return (
     <div>
-      <div style={{height: '20vh'}} className="bg-gradient-to-b from-blue-100 to-blue-400 hidden md:block"></div>
-      <div style={{height: '10vh'}} className="bg-gradient-to-b from-blue-100 to-blue-400 md:hidden"></div>
+      <div className="bg-gradient-to-b to-blue-400 md:h-30 h-10"></div>
       <div className="bg-blue-400 text-red-700 text-shadow-lg flex flex-col items-center text-2xl">
         <h1 className="2xl:py-20 py-6 xl:text-6xl sm:ml-0 ml-4">Stop motion lego pirates !</h1>
         <img
@@ -86,7 +84,7 @@ function PirateHomePage () {
           className="w-[70%]" 
         />
       </div>
-      <div style={{height: '20vh'}} className="bg-gradient-to-b from-blue-400 to-blue-100">
+      <div style={{height: '20vh'}} className="bg-gradient-to-b from-blue-400">
       </div>
     </div>
   )
@@ -94,7 +92,7 @@ function PirateHomePage () {
 
 function Home () {
   return (
-  <div className="bg-blue-100">
+  <div className="bg-gradient-to-br from-blue-100 to-blue-400">
     <GoTopButton/>
     <TopMenu/>
     <MainBanner/>

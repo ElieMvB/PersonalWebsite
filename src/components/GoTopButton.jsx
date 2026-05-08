@@ -31,7 +31,7 @@ export function GoTopButton () {
     return (
         <div className="fixed absolute z-51 right-5 bottom-5" >
         {showButtonGoTop && <button className="bg-blue-300 border-blue-400 
-            hover:bg-sky-600 rounded-full">
+            hover:bg-sky-600 rounded-full sm:w-20 sm:h-20 h-18 w-18">
             <img
                 className="w-[60px]"
                 src={glider}

@@ -29,14 +29,14 @@ export default function Contact () {
     }
 
     return (
-        <div className="h-screen bg-blue-100">
+        <div className="h-screen bg-gradient-to-br from-blue-100 to-blue-400">
             <TopMenu/>
             <h1 className="2xl:mt-20 xl:mt-15 lg:mt-17 md:mt-20 sm:mt-20 flex justify-center 
                             2xl:text-7xl sm:text-5xl">
                 Me Contacter :
             </h1>
             <div className={` flex justify-center mb-5 
-                            2xl:text-4xl lg:text-3xl bg-blue-100 sm:text-2xl text-md`}>
+                            2xl:text-4xl lg:text-3xl sm:text-2xl text-md`}>
                 <div className={`${showContact ? "" : "w-2/3"} sm:w-2/3 xl:w-2/5 border-black border-4 rounded-md flex 
                                 justify-center items-center bg-slate-400 py-2 sm:py-0`}>
                     {showContact === "ig" && <p>@elie_mvb</p>}
@@ -59,7 +59,7 @@ export default function Contact () {
                     }
                 </div>
             </div>
-            <div className="bg-blue-100 w-full mb-4 2xl:mt-20 xl:mt-15 lg:mt-10 md:mt-5">
+            <div className="w-full mb-4 2xl:mt-20 xl:mt-15 lg:mt-10 md:mt-5">
                 <div className="2xl:ml-55 2xl:mr-55 xl:ml-40 xl:mr-40 grid sm:grid-cols-3 lg:gap-40 
                                 lg:ml-20 lg:mr-20 md:ml-30 md:mr-30 md:gap-25 ml-25 
                                 mr-25 gap-5 grid-cols-1">
