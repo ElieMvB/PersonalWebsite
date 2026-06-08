@@ -1,6 +1,7 @@
 import { TopMenu } from "../components/TopMenu";
 import ragda from "../assets/videos/rock/ragda.mp4";
 import ifgt from "../assets/videos/rock/ifgt_rock.mp4"
+import v24h from "../assets/videos/rock/24h.mp4"
 
 export default function Rock () {
     return (
@@ -43,11 +44,30 @@ export default function Rock () {
                                 className="sm:w-[70%] w-[95%]" 
                             />
                         </div>
-                        <p className="text-slate-400 text-center">Official video comming soon</p>
+                        <p className="md:ml-15 ml-7 md:mr-15 mr-7">
+                            Vidéo officielle
+                            <a 
+                            href="https://www.youtube.com/watch?v=tdHtEnxRa-Q&t=3360s" 
+                            target="_blank"
+                            className="ml-2 text-amber-400 hover:text-amber-600">
+                                ici
+                            </a>
+                            . (minute 56)
+                        </p>
                     </div>
                     <div className="text-red-700 text-xl">
                         <h1 className="text-white md:ml-10 ml-5 py-6 sm:text-7xl text-5xl">Chorées des 24h de <strong className="text-red-700">l'INSA</strong> !</h1>
-                        <p className="text-slate-400 text-center">Comming soon</p>
+                        <p className="text-white md:ml-15 ml-7 md:mr-15 mr-7">
+                            Chorée rock qui sors un peu de l'ordinaire, étant donné qu'on ne fait pas que du rock. <br/>
+                            Très fun malgré cela, et m'a bien sorti de ma zone de confort !
+                        </p>
+                        <div className="flex justify-center">
+                            <video
+                                src={v24h}
+                                controls="controls" 
+                                className="sm:w-[70%] w-[95%]" 
+                            />
+                        </div>
                     </div>
                     <div className="h-20 hidden sm:block"/>
                 </div>
