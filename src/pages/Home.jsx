@@ -7,8 +7,6 @@ import jeux from "../assets/images/me/jeux.jpg"
 import mountain from "../assets/images/me/mountain.jpg"
 import river from "../assets/images/me/river.jpg"
 import planch from "../assets/images/me/semi-planch.jpg"
-import stopmotion from "../assets/videos/stop_motion_pirates.mp4"
-import pirate from "../assets/images/pirate-head.png"
 
 function SlideMenu () {
   const img = [bubbles, jeux, mountain, river, planch];
