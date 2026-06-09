@@ -5,6 +5,7 @@ import { MyGamesHub } from "./pages/myGames/MyGamesHub"
 import { Galaxian } from "./pages/myGames/Galaxian"
 import { Jumper } from "./pages/myGames/Jumper"
 import { Selda } from "./pages/myGames/Selda"
+import {StopMotion} from "./pages/StopMotion"
 import ScrollToTop from "./components/ScrollToTop"
 import Objectifs from "./pages/Objectifs"
 import ObjectifAtteint from "./pages/callisthenie/ObjectifAtteint"
@@ -62,6 +63,10 @@ const router = createBrowserRouter([
       {
         path: "rock",
         element: <Rock/>
+      },
+      {
+        path: "stop-motion",
+        element: <StopMotion/>
       },
       {
         path: "contact",
